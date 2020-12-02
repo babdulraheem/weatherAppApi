@@ -1,38 +1,40 @@
 body {
-  background-image: url("weather5.jpg");
-  height: auto;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  font-family: "Apple Chancery", cursive;
+    background-image: url("weather5.jpg");
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Apple Chancery", cursive;
 }
 
 h1,
 h2,
 p,
 .input {
-  text-align: center;
+    text-align: center;
 }
 
 .input_text {
-  border-radius: 25px;
-  text-align: center;
+    border-radius: 25px;
+    text-align: center;
 }
 
 .container {
-  margin: auto;
-  width: 32%;
-  background-color: #6CA6CD;
-  padding: 10px;
-  padding-top: 50px;
-  border-radius: 25px;
+    margin: auto;
+    width: 32%;
+    background-color: #6CA6CD;
+    padding: 10px;
+    padding-top: 50px;
+    border-radius: 25px;
 }
 
 .input {
-  padding: 10px;
+    padding: 10px;
 }
 
 .submit {
-  border-radius: 25px;
+    border-radius: 25px;
 }
+
+
 /*# sourceMappingURL=main.css.map */
