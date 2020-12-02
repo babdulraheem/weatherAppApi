@@ -1,29 +1,27 @@
 body {
-    background-image: url("weather.jpg");
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url("weather3.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 h1,
 h2,
 p,
 .input {
-    text-align: center;
+  text-align: center;
 }
 
 .container {
-    margin: auto;
-    width: 25%;
-    background-color: #6CA6CD;
-    padding: 10px;
-    padding-top: 50px;
+  margin: auto;
+  width: 25%;
+  background-color: #6CA6CD;
+  padding: 10px;
+  padding-top: 50px;
 }
 
 .input {
-    padding: 10px;
+  padding: 10px;
 }
-
-
 /*# sourceMappingURL=main.css.map */

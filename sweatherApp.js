@@ -25,7 +25,8 @@ button.addEventListener('click', function(name) {
 
             main.innerHTML = nameValue;
             desc.innerHTML = "Description - " + descValue;
-            temp.innerHTML = "Tempreature - " + tempValue;
+            //temp.innerHTML = "Tempreature - " + tempValue;
+            temp.innerHTML = "Temperature - " + Math.floor((tempValue - 273) * (9 / 5) + 32) + " F";
             input.value = "";
             icon.innerHTML = `<img src="http://openweathermap.org/img/wn/${iconValue}@2x.png"/>`;
 
@@ -92,7 +93,7 @@ function getWeather(lat, lon) {
 
     const key = "be2cfc723b432769c604e3e20d52e07d";
 
-    fetch(`http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${key}`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${key}`)
         .then(response => response.json())
         .then(data => {
             const tempValue2 = data['main']['temp'];
@@ -102,7 +103,7 @@ function getWeather(lat, lon) {
 
             main2.innerHTML = nameValue2;
             desc2.innerHTML = "Description - " + descValue2;
-            temp2.innerHTML = "Temperature - " + tempValue2;
+            temp2.innerHTML = "Temperature - " + Math.floor((tempValue2 - 273) * (9 / 5) + 32) + " F";
             icon2.innerHTML = `<img src="http://openweathermap.org/img/wn/${iconValue2}@2x.png"/>`;
 
         })
