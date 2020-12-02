@@ -92,7 +92,7 @@ function getWeather(lat, lon) {
 
     const key = "be2cfc723b432769c604e3e20d52e07d";
 
-    fetch(`http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${key}`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${key}`)
         .then(response => response.json())
         .then(data => {
             const tempValue2 = data['main']['temp'];
