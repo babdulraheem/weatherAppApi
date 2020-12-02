@@ -1,10 +1,17 @@
 body {
-    background-image: url("weather5.jpg");
-    height: auto;
+    font-family: "Apple Chancery", cursive;
+}
+
+html {
+    background-color: white;
+}
+
+.background-image {
+    height: 100%;
+    width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: "Apple Chancery", cursive;
 }
 
 h1,

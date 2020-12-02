@@ -23,15 +23,22 @@ button.addEventListener('click', function(name) {
             const iconValue = data['weather'][0]['icon'];
 
 
-            main.innerHTML = nameValue;
-            desc.innerHTML = "Description - " + descValue;
-            //temp.innerHTML = "Tempreature - " + tempValue;
+            // data saved in local storage
+            localStorage.setItem('City Name', nameValue);
+            let myData = localStorage.getItem('City Name');
+            main.innerHTML = myData;
+
+            localStorage.setItem('wDescription', descValue);
+            let myDescData = localStorage.getItem('wDescription');
+            desc.innerHTML = "Description - " + myDescData;
+
+
             temp.innerHTML = "Temperature - " + Math.floor((tempValue - 273) * (9 / 5) + 32) + " F";
             input.value = "";
             icon.innerHTML = `<img src="http://openweathermap.org/img/wn/${iconValue}@2x.png"/>`;
 
-
         })
+
 
     .catch(err => alert("Wrong city name!"));
 })
@@ -105,6 +112,13 @@ function getWeather(lat, lon) {
             desc2.innerHTML = "Description - " + descValue2;
             temp2.innerHTML = "Temperature - " + Math.floor((tempValue2 - 273) * (9 / 5) + 32) + " F";
             icon2.innerHTML = `<img src="http://openweathermap.org/img/wn/${iconValue2}@2x.png"/>`;
+
+            //localStorage.setItem("Tempreature2", temp2);
+            // temp2.innerHTML = localStorage.getItem(temp2);
+
+            //window.localStorage.setItem("Tempreature2", temp2.innerText);
+
+
 
         })
 

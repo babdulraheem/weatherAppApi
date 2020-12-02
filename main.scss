@@ -1,37 +1,47 @@
+$align: center;
+$radius: 25px;
+$padding: 10px;
 body {
-    background-image: url("weather5.jpg");
-    height: auto;
+    font-family: "Apple Chancery", cursive;
+}
+
+html {
+    background-color: white;
+}
+
+.background-image {
+    height: 100%;
+    width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: "Apple Chancery", cursive;
 }
 
 h1,
 h2,
 p,
 .input {
-    text-align: center;
+    text-align: $align;
 }
 
 .input_text {
     border-radius: 25px;
-    text-align: center;
+    text-align: $align;
 }
 
 .container {
     margin: auto;
     width: 32%;
     background-color: #6CA6CD;
-    padding: 10px;
+    padding: $padding;
     padding-top: 50px;
-    border-radius: 25px;
+    border-radius: $radius;
 }
 
 .input {
-    padding: 10px;
+    padding: $padding;
 }
 
 .submit {
-    border-radius: 25px;
+    border-radius: $radius;
 }

@@ -10,36 +10,41 @@
 
 </head>
 
-<body>
+<div class="background-image" style="background-image: url('weather5.jpg');">
 
-    <div class="container">
 
-        <h1 tabindex="0">WEATHER APP</h1>
+    <body>
 
-        <div class="input">
-            <input type="text" placeholder="Enter the city name" class="input_text">
-            <input type="submit" value="Submit" class="submit">
+        <div class="container">
+
+            <h1 tabindex="0">WEATHER APP</h1>
+
+            <div class="input">
+                <input type="text" placeholder="Enter the city name" class="input_text">
+                <input type="submit" value="Submit" class="submit">
+            </div>
+
+            <div class="card">
+
+                <h1 tabindex="0">Local Weather</h1>
+                <h2 class="name2" id="name2" tabindex="0">here goes name 2</h2>
+                <p class="temp2" tabindex="0">Here goes 2nd temp: </p>
+                <p class="desc2" tabindex="0">Here goes 2nd desc:</p>
+                <p class="icon2" tabindex="0" aria-label="weather icon">Weather Image</p>
+
+
+                <h1 tabindex="0">Selected Weather</h1>
+                <h2 class="name" id="name" tabindex="0"></h2>
+                <p class="temp" tabindex="0"></p>
+                <p class="desc" tabindex="0"></p>
+                <p class="icon" tabindex="0" aria-label="weather icon"></p>
+
+
+            </div>
         </div>
+        <script src="sweatherApp.js"></script>
 
-        <div class="card">
-
-            <h1 tabindex="0">Local Weather</h1>
-            <h2 class="name2" id="name2" tabindex="0">here goes name 2</h2>
-            <p class="temp2" tabindex="0">Here goes 2nd temp: </p>
-            <p class="desc2" tabindex="0">Here goes 2nd desc:</p>
-            <p class="icon2" tabindex="0" aria-label="weather icon">Weather Image</p>
-
-
-            <h1 tabindex="0">Selected Weather</h1>
-            <h2 class="name" id="name" tabindex="0"></h2>
-            <p class="temp" tabindex="0"></p>
-            <p class="desc" tabindex="0"></p>
-            <p class="icon" tabindex="0" aria-label="weather icon"></p>
-
-
-        </div>
-    </div>
-    <script src="sweatherApp.js"></script>
-</body>
+    </body>
+</div>
 
 </html>
